@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <header>
+            <h1>Online Quiz</h1>
+            <p>Test your knowledge!</p>
+        </header>
+
+        <div class="score-board">
+            <span id="question-count">Question 1 of 5</span>
+            <span>Highest Score: <strong id="high-score">0</strong></span>
+        </div>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <main id="quiz-area">
+            <h2 id="question">Question appears here</h2>
+            <div id="options-container"></div>
+
+            <div class="buttons">
+                <button id="previous-btn" type="button">Previous</button>
+                <button id="next-btn" type="button">Next</button>
+                <button id="submit-btn" type="button" hidden>
+                    Submit Quiz
+                </button>
+            </div>
+        </main>
+
+        <section id="result-area" hidden>
+            <h2>Quiz Completed!</h2>
+            <p id="result-message"></p>
+            <p id="final-score"></p>
+            <p id="result-high-score"></p>
+            <button id="restart-btn" type="button">Try Again</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
